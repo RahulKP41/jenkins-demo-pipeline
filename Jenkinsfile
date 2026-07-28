@@ -3,7 +3,8 @@ pipeline{
     stages{
         stage('Clone Code'){
             steps{
-                git 'https://github.com/RahulKP41/jenkins-demo-pipeline.git'
+                git branch: 'main',
+                    url: 'https://github.com/RahulKP41/jenkins-demo-pipeline.git'
             }
         }
         stage('Install Dependencies'){
